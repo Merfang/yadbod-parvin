@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>یادبود مرحومه پروین گودرزی</title>
+  <link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.003/index.css" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fdfcfb;
+      --card:#ffffff;
+      --txt:#222;
+      --muted:#555;
+      --accent:#7c3aed;
+      --soft:#f6f3fe;
+    }
+    html,body{
+      margin:0;padding:0;
+      background:var(--bg);color:var(--txt);
+      font-family:'Vazirmatn', sans-serif;
+      line-height:1.9;
+    }
+    .container{max-width:860px;margin:36px auto;padding:16px;}
+    .card{background:var(--card);border-radius:24px;box-shadow:0 14px 40px rgba(0,0,0,.08);overflow:hidden;padding-bottom:26px;}
+    .intro{padding:28px 18px;background:linear-gradient(180deg,#faf7ff,transparent);text-align:center}
+    .intro h1{font-size:34px;color:var(--accent);margin:0;}
+    .header{text-align:center;padding:0 20px;}
+    .header img{width:100%;display:block;object-fit:cover;max-height:420px;border-radius:18px;}
+    .body{padding:22px 22px 30px}
+    .info{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin:8px 0 6px}
+    .meta{font-size:17px;color:var(--muted);background:var(--soft);padding:10px 12px;border-radius:14px}
+    .badge{display:inline-block;padding:8px 16px;border-radius:999px;background:#efeafd;color:#3b2fbf;font-size:13px;margin:10px auto 0}
+    h3{margin:22px 0 14px;font-size:20px;color:#333;text-align:center;}
+    p{margin:6px 0}
+    .prayer{background:#fafafa;border:1px solid #eee;border-radius:16px;padding:16px 14px;margin-top:12px;text-align:center}
+    .ayah{font-size:18px;line-height:2;}
+    .poem{background:#fff7f0;border:1px solid #f8d0b7;border-radius:18px;padding:18px;margin:18px 0;text-align:center;font-size:18px;line-height:2;color:#444;}
+    .footer-note{color:var(--muted);font-size:14px;margin-top:18px;text-align:center}
+    audio{width:100%;margin:10px 0;border-radius:8px;}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 4px}
+    .btn{cursor:pointer;border:0;background:var(--accent);color:#fff;padding:10px 14px;border-radius:12px;font-size:14px}
+    .btn.secondary{background:#e5e7eb;color:#111}
+    @media (max-width:600px){
+      .info{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="intro">
+        <h1>مادر مهربان و دلسوز</h1>
+      </div>
+      <div class="header">
+        <img src="photo.jpg" alt="مرحومه پروین گودرزی">
+      </div>
+      <div class="body">
+        <div class="info">
+          <div class="meta"><strong>نام:</strong> پروین</div>
+          <div class="meta"><strong>نام پدر:</strong> علی‌محمد گودرزی</div>
+          <div class="meta"><strong>تاریخ تولد:</strong> 01/01/1357</div>
+          <div class="meta"><strong>تاریخ وفات:</strong> 18/10/1402</div>
+        </div>
+        <div style="text-align:center">
+          <span class="badge">یادش گرامی و روحش قرین رحمت</span>
+        </div>
+
+        <h3>شعری در وصف مادر</h3>
+        <div class="poem">
+          <p>مادر تو بهار زندگی و آرامِ جان هستی</p>
+          <p>مهرت چراغِ راه و دعایت پناهِ دل‌هاست</p>
+          <p>هر لبخندت امید و هر نگاهت صفاست</p>
+          <p>ای مادر، یادت همیشه در قلبِ ما جاری‌ست</p>
+        </div>
+
+        <h3>تلاوت قرآن</h3>
+        <div class="audio-list">
+          <label>آیةالکرسی</label>
+          <audio controls src="quran-ayatalkursi.mp3"></audio>
+
+          <label>سوره بقره (بخشی)</label>
+          <audio controls src="quran-baqara.mp3"></audio>
+
+          <label>سوره ملک</label>
+          <audio controls src="quran-mulk.mp3"></audio>
+
+          <label>سوره فاتحه</label>
+          <audio id="fatihaAudio" controls src="fatiha.mp3"></audio>
+          <div class="controls">
+            <button id="btnFatiha" class="btn">پخش فاتحه</button>
+          </div>
+
+          <label>سوره الرحمن</label>
+          <audio controls src="rahman.mp3"></audio>
+
+          <label>سوره الفلق</label>
+          <audio controls src="falaq.mp3"></audio>
+
+          <label>سوره الناس</label>
+          <audio controls src="naas.mp3"></audio>
+        </div>
+
+        <h3>متن سوره فاتحه</h3>
+        <div class="prayer ayah">
+          <p>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+          <p>الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
+          <p>الرَّحْمَنِ الرَّحِيمِ</p>
+          <p>مَالِكِ يَوْمِ الدِّينِ</p>
+          <p>إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</p>
+          <p>اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</p>
+          <p>صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</p>
+        </div>
+
+        <h3>صلوات</h3>
+        <div class="prayer ayah">
+          <p>اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَآلِ مُحَمَّدٍ، وَعَجِّلْ فَرَجَهُمْ</p>
+        </div>
+
+        <div class="footer-note">
+          برای شادی روح مرحومه، قرائت فاتحه مع‌الصلوات هدیه شود.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('btnFatiha')?.addEventListener('click', function(){
+      const a = document.getElementById('fatihaAudio');
+      if(a){ a.currentTime = 0; a.play().catch(()=>{}); }
+    });
+  </script>
+</body>
+</html>
